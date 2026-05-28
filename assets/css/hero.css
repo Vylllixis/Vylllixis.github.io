@@ -1,0 +1,283 @@
+/*
+  hero.css — Section Hero
+  Premier écran, accroche principale.
+*/
+
+/* =========================================
+   HERO — Conteneur principal
+========================================= */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: var(--navbar-height); /* Compense la navbar fixe */
+}
+
+/* =========================================
+   HERO — Fond avec orbes lumineuses
+========================================= */
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Les orbes sont des cercles flous colorés en arrière-plan */
+.hero__bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  animation: orb-float 8s ease-in-out infinite;
+}
+
+.hero__bg-orb--1 {
+  width: 500px;
+  height: 500px;
+  background: var(--color-primary);
+  top: -100px;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.hero__bg-orb--2 {
+  width: 400px;
+  height: 400px;
+  background: var(--color-accent);
+  top: 30%;
+  right: -50px;
+  animation-delay: -3s;
+}
+
+.hero__bg-orb--3 {
+  width: 300px;
+  height: 300px;
+  background: var(--color-secondary);
+  bottom: 10%;
+  left: 30%;
+  animation-delay: -6s;
+}
+
+@keyframes orb-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(20px, -20px) scale(1.05); }
+  66%       { transform: translate(-15px, 15px) scale(0.95); }
+}
+
+/* =========================================
+   HERO — Contenu
+========================================= */
+
+.hero__content {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 760px;
+  padding-block: var(--space-4xl);
+}
+
+/* Ligne "Bonjour, je suis" */
+.hero__greeting {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+  animation-delay: 0.1s;
+}
+
+.hero__greeting-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* Nom principal */
+.hero__name {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--space-lg);
+  animation-delay: 0.2s;
+}
+
+/* Ligne titre + typewriter */
+.hero__title {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  animation-delay: 0.3s;
+}
+
+.hero__title-prefix {
+  color: var(--color-text-primary);
+}
+
+.hero__typewriter {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.hero__cursor {
+  color: var(--color-primary);
+  animation: blink 1s step-end infinite;
+  font-weight: 300;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Description */
+.hero__description {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: 580px;
+  margin-bottom: var(--space-2xl);
+  animation-delay: 0.4s;
+}
+
+.hero__description strong {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+/* Boutons CTA */
+.hero__actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3xl);
+  animation-delay: 0.5s;
+}
+
+/* Statistiques rapides */
+.hero__stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  animation-delay: 0.6s;
+}
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.hero__stat-value {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.hero__stat-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.hero__stat-divider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-border);
+}
+
+/* =========================================
+   HERO — Flèche scroll bas
+========================================= */
+
+.hero__scroll-arrow {
+  position: absolute;
+  bottom: var(--space-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-text-secondary);
+  animation: bounce-arrow 2s ease-in-out infinite;
+  transition: color var(--transition-fast);
+  z-index: var(--z-base);
+}
+
+.hero__scroll-arrow:hover {
+  color: var(--color-primary);
+}
+
+@keyframes bounce-arrow {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+/* =========================================
+   ANIMATIONS — fade-in au chargement
+========================================= */
+
+/* Les éléments .fade-in dans le hero ont une animation d'entrée */
+.hero .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: hero-fade-in 0.6s ease forwards;
+}
+
+@keyframes hero-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .hero__content {
+    padding-block: var(--space-2xl);
+  }
+
+  .hero__stats {
+    gap: var(--space-md);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__stats {
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+
+  .hero__stat-divider {
+    display: none;
+  }
+}

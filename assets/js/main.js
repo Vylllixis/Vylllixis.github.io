@@ -1,3 +1,67 @@
+/*
+  main.js — Initialisations générales du portfolio.
+*/
+
+(function () {
+  'use strict';
+
+  // =========================================
+  // INTERSECTION OBSERVER — Animations scroll
+  // =========================================
+  // Détecte quand un élément .fade-in entre dans le viewport
+  // et lui ajoute la classe .visible (qui déclenche l'animation CSS)
+
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  // Sauf les éléments de la Hero (ils ont leur propre animation CSS)
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // On n'observe plus une fois visible
+        }
+      });
+    },
+    {
+      threshold: 0.15,    // L'élément doit être visible à 15% pour déclencher
+      rootMargin: '0px 0px -50px 0px', // Déclenche un peu avant le bord inférieur
+    }
+  );
+
+  fadeElements.forEach((el) => {
+    // Ne pas observer les éléments du hero (ils ont une animation CSS directe)
+    if (!el.closest('#hero')) {
+      observer.observe(el);
+    }
+  });
+
+  // =========================================
+  // SMOOTH SCROLL — Navigation par ancres
+  // =========================================
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        e.preventDefault();
+        const navbarHeight = parseInt(
+          getComputedStyle(document.documentElement)
+            .getPropertyValue('--navbar-height'),
+          10
+        );
+        const targetPosition = targetEl.getBoundingClientRect().top
+          + window.scrollY
+          - navbarHeight;
+
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
+    });
+  });
+
+})();
+
 // =========================================
 // NAVBAR — Comportements
 // =========================================
