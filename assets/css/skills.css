@@ -1,0 +1,223 @@
+/*
+  skills.css — Section Compétences
+*/
+
+/* =========================================
+   SKILLS — Grille des catégories
+========================================= */
+
+.skills__categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+}
+
+/* =========================================
+   SKILLS — Catégorie
+========================================= */
+
+.skills__category {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: border-color var(--transition-normal);
+}
+
+.skills__category:hover {
+  border-color: var(--color-primary);
+}
+
+.skills__category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.skills__category-header h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.skills__category-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary-glow);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* =========================================
+   SKILL CARD
+========================================= */
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.skill-card {}
+
+.skill-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+.skill-card__name {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+}
+
+/* Badge de niveau */
+.skill-card__level {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  padding: 2px var(--space-sm);
+  border-radius: var(--radius-full);
+  font-weight: 500;
+}
+
+.skill-card__level--advanced {
+  background-color: rgba(108, 99, 255, 0.15);
+  color: var(--color-primary);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+}
+
+.skill-card__level--intermediate {
+  background-color: rgba(0, 212, 170, 0.1);
+  color: var(--color-accent);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+}
+
+.skill-card__level--beginner {
+  background-color: rgba(139, 148, 158, 0.1);
+  color: var(--color-text-secondary);
+  border: 1px solid rgba(139, 148, 158, 0.2);
+}
+
+/* Contexte d'utilisation */
+.skill-card__context {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+/* Barre de niveau */
+.skill-card__bar {
+  height: 4px;
+  background-color: var(--color-bg-elevated);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.skill-card__bar-fill {
+  height: 100%;
+  width: 0; /* Commence à 0, animé en JS */
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: var(--radius-full);
+  transition: width 1s ease 0.2s;
+}
+
+/* Quand la section est visible, on anime les barres */
+.skills__category.visible .skill-card__bar-fill {
+  width: var(--skill-width);
+}
+
+/* =========================================
+   SKILLS — Tags (pour catégorie Domaines)
+========================================= */
+
+.skills__list--tags {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.skill-tag--core {
+  background-color: rgba(108, 99, 255, 0.1);
+  color: var(--color-primary);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+}
+
+.skill-tag--core:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.skill-tag--secondary {
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.skill-tag--secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.skill-tag--learning {
+  background-color: rgba(255, 101, 132, 0.1);
+  color: var(--color-secondary);
+  border: 1px solid rgba(255, 101, 132, 0.3);
+}
+
+/* =========================================
+   DISCLAIMER
+========================================= */
+
+.skills__disclaimer {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin-inline: auto;
+  padding: var(--space-md);
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.skills__disclaimer strong {
+  color: var(--color-text-secondary);
+}
+
+.skills__disclaimer--learning {
+  display: block;
+  margin-top: var(--space-sm);
+  color: var(--color-secondary);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .skills__categories {
+    grid-template-columns: 1fr;
+  }
+}

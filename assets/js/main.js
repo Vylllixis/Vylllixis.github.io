@@ -141,3 +141,26 @@ const navObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => navObserver.observe(section));
+
+// =========================================
+// SKILL BARS — Animation au scroll
+// =========================================
+// Quand une .skills__category entre dans le viewport,
+// on lui ajoute .visible ce qui déclenche l'animation CSS
+// des barres (width: 0 → --skill-width)
+
+const skillCategories = document.querySelectorAll('.skills__category');
+
+const skillObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        skillObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+skillCategories.forEach((cat) => skillObserver.observe(cat));

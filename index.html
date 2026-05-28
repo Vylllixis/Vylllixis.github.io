@@ -200,6 +200,351 @@
       <span class="tag">.NET</span>
     </div>
   </div>
+
+  <!-- ==========================================
+      SECTION À PROPOS
+  ========================================== -->
+  <section id="a-propos" class="section--alt">
+    <div class="container">
+
+      <!-- En-tête de section (pattern réutilisable) -->
+      <div class="section-header fade-in">
+        <span class="section-tag">// À propos</span>
+        <h2>Qui suis-je ?</h2>
+      </div>
+
+      <div class="about__grid">
+
+        <!-- Colonne gauche : Photo + badges -->
+        <div class="about__photo-col fade-in">
+          <div class="about__photo-wrapper">
+            <img
+              src="assets/img/profile.jpg"
+              alt="Photo de Théo Moitrier-Cabodi"
+              class="about__photo"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+            <!-- Décorations autour de la photo -->
+            <div class="about__photo-border" aria-hidden="true"></div>
+            <div class="about__photo-dot about__photo-dot--tl" aria-hidden="true"></div>
+            <div class="about__photo-dot about__photo-dot--br" aria-hidden="true"></div>
+          </div>
+
+          <!-- Badges d'info rapide -->
+          <div class="about__info-badges">
+            <div class="about__info-badge">
+              <span class="about__info-badge-icon" aria-hidden="true">📍</span>
+              <span>Lamanon, France</span>
+            </div>
+            <div class="about__info-badge">
+              <span class="about__info-badge-icon" aria-hidden="true">🎓</span>
+              <span>ESGI + Alternance</span>
+            </div>
+            <div class="about__info-badge">
+              <span class="about__info-badge-icon" aria-hidden="true">💼</span>
+              <span>Mirion Technologies</span>
+            </div>
+            <div class="about__info-badge">
+              <span class="about__info-badge-icon" aria-hidden="true">🤖</span>
+              <span>Fan d'IA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne droite : Bio -->
+        <div class="about__bio-col fade-in">
+          <p class="about__bio-text">
+            Développeur applicatif R&D en alternance chez
+            <strong>Mirion Technologies</strong>, je me spécialise dans la
+            modernisation d'applications : prendre un logiciel vieillissant,
+            comprendre son fonctionnement, et le transformer en quelque chose
+            de rapide, maintenable et agréable à utiliser.
+          </p>
+
+          <p class="about__bio-text">
+            Mon parcours mêle <strong>Epitech</strong>, l'<strong>ESGI</strong>
+            et une immersion concrète dans un environnement industriel exigeant.
+            J'ai appris à lire et modifier du code que je n'ai pas écrit, à
+            chercher des solutions par moi-même, et à poser les bonnes questions
+            au bon moment — des compétences que l'école seule ne peut pas
+            t'enseigner.
+          </p>
+
+          <p class="about__bio-text">
+            En dehors du boulot, je suis passionné par
+            l'<strong>intelligence artificielle</strong> — pas seulement en
+            utilisateur, mais avec l'envie de comprendre comment ça marche sous
+            le capot. J'ai quelques projets IA qui dorment dans mes repos...
+            et que je compte bien finir.
+          </p>
+
+          <!-- Compétences-clés (aperçu rapide) -->
+          <div class="about__quick-skills">
+            <span class="tag">C#</span>
+            <span class="tag">.NET / MAUI</span>
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git</span>
+            <span class="tag">Azure</span>
+          </div>
+
+          <!-- Bouton CV -->
+          <div class="about__actions">
+            <a
+              href="assets/cv/cv-theo-moitrier-cabodi.pdf"
+              download
+              class="btn btn--primary"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Télécharger mon CV
+            </a>
+            <a
+              href="https://linkedin.com/in/theo-moitrier-cabodi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--outline"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+      SECTION COMPÉTENCES
+  ========================================== -->
+  <section id="competences">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">// Compétences</span>
+        <h2>Mon stack technique</h2>
+        <p>Les outils et langages que j'utilise au quotidien — organisés par domaine</p>
+      </div>
+
+      <div class="skills__categories">
+
+        <!-- Catégorie 1 : Langages -->
+        <div class="skills__category fade-in">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3>Langages</h3>
+          </div>
+          <div class="skills__list">
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">C</span>
+                <span class="skill-card__level skill-card__level--advanced">Très Avancé</span>
+              </div>
+              <p class="skill-card__context">Production — Mirion Technologies</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Python</span>
+                <span class="skill-card__level skill-card__level--intermediate">Intermédiaire</span>
+              </div>
+              <p class="skill-card__context">Alternance + projets personnels</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 60%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">JavaScript</span>
+                <span class="skill-card__level skill-card__level--advanced">Avancé</span>
+              </div>
+              <p class="skill-card__context">Projets web + école</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">HTML / CSS</span>
+                <span class="skill-card__level skill-card__level--advanced">Avancé</span>
+              </div>
+              <p class="skill-card__context">Portfolio + tous projets web</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">PHP</span>
+                <span class="skill-card__level skill-card__level--intermediate">Intermédiaire</span>
+              </div>
+              <p class="skill-card__context">Formation scolaire</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">C#</span>
+                <span class="skill-card__level skill-card__level--intermediate">Intermédiaire</span>
+              </div>
+              <p class="skill-card__context">Epitech</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 50%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Catégorie 2 : Frameworks & Plateformes -->
+        <div class="skills__category fade-in">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+            </div>
+            <h3>Frameworks &amp; Plateformes</h3>
+          </div>
+          <div class="skills__list">
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">.NET / MAUI</span>
+                <span class="skill-card__level skill-card__level--advanced">Avancé</span>
+              </div>
+              <p class="skill-card__context">Migration Xamarin → MAUI — Mirion</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Xamarin</span>
+                <span class="skill-card__level skill-card__level--intermediate">Intermédiaire</span>
+              </div>
+              <p class="skill-card__context">Héritage — migration en cours</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 55%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Catégorie 3 : Outils & DevOps -->
+        <div class="skills__category fade-in">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <h3>Outils &amp; DevOps</h3>
+          </div>
+          <div class="skills__list">
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Git</span>
+                <span class="skill-card__level skill-card__level--advanced">Avancé</span>
+              </div>
+              <p class="skill-card__context">Quotidien — tous projets</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Azure</span>
+                <span class="skill-card__level skill-card__level--beginner">Notions</span>
+              </div>
+              <p class="skill-card__context">Environnement Mirion Technologies</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 25%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Visual Studio</span>
+                <span class="skill-card__level skill-card__level--advanced">Avancé</span>
+              </div>
+              <p class="skill-card__context">IDE principal en alternance</p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--skill-width: 80%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Catégorie 4 : Domaines -->
+        <div class="skills__category fade-in">
+          <div class="skills__category-header">
+            <div class="skills__category-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Domaines</h3>
+          </div>
+          <div class="skills__list skills__list--tags">
+            <span class="skill-tag skill-tag--core">Modernisation d'applications</span>
+            <span class="skill-tag skill-tag--core">Programmation orientée objet</span>
+            <span class="skill-tag skill-tag--core">Migration .NET / MAUI</span>
+            <span class="skill-tag skill-tag--secondary">UX / UI</span>
+            <span class="skill-tag skill-tag--secondary">Refactoring</span>
+            <span class="skill-tag skill-tag--secondary">Maintenance logicielle</span>
+            <span class="skill-tag skill-tag--learning">Intelligence Artificielle 🤖</span>
+            <span class="skill-tag skill-tag--learning">Machine Learning</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Note honnêteté -->
+      <p class="skills__disclaimer fade-in">
+        <strong>Note :</strong> les niveaux sont subjectifs et basés sur mon utilisation réelle.
+        "Avancé" = utilisé en production / projet sérieux.
+        "Intermédiaire" = à l'aise mais encore en apprentissage.
+        "Notions" = bases solides, pas d'usage régulier.
+        <span class="skills__disclaimer--learning">🤖 = en cours d'apprentissage actif</span>
+      </p>
+
+    </div>
+  </section>
+
   <!-- ==========================================
       SECTION CONTACT (courte, avant footer)
   ========================================== -->
