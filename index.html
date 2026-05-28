@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Théo Moitrier-Cabodi — Développeur Applicatif R&D</title>
 
-  <!-- CSS (on les remplira module par module) -->
+  <!-- Google Fonts — Préchargement pour la performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/variables.css" />
   <link rel="stylesheet" href="assets/css/global.css" />
@@ -17,14 +25,25 @@
   <link rel="stylesheet" href="assets/css/experience.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
 </head>
-<body>
+<body style="padding: 2rem;">
+  <div class="container">
+    <h1 class="gradient-text">Théo Moitrier-Cabodi</h1>
+    <h2>Développeur Applicatif R&D</h2>
+    <p style="color: var(--color-text-secondary); margin-top: 1rem;">
+      Texte secondaire avec la police Inter
+    </p>
+    <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="#" class="btn btn--primary">Mon GitHub</a>
+      <a href="#" class="btn btn--outline">Télécharger CV</a>
+    </div>
+    <div style="margin-top: 2rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      <span class="tag">C#</span>
+      <span class="tag">Python</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">.NET</span>
+    </div>
+  </div>
 
-  <!-- Le contenu sera ajouté module par module -->
-  <h1 style="color: white; font-family: sans-serif; text-align: center; padding: 4rem;">
-    Portfolio en construction — Théo Moitrier-Cabodi
-  </h1>
-
-  <!-- JS -->
   <script src="assets/js/typewriter.js"></script>
   <script src="assets/js/projects.js"></script>
   <script src="assets/js/main.js"></script>

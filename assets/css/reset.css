@@ -1,0 +1,80 @@
+/*
+  reset.css — Modern CSS Reset
+  Remet tous les navigateurs au même niveau de base.
+  Ne touche pas à ce fichier sauf si tu sais ce que tu fais.
+*/
+
+/* 1. Utilise box-sizing: border-box sur tout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Supprime les marges par défaut */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Améliore le rendu du texte */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+/* 4. Images et vidéos responsive par défaut */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Hérite de la police pour les formulaires */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Texte long ne déborde pas */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Crée un contexte de stacking pour les éléments racines */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 8. Supprime les styles de listes */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 9. Supprime les styles de liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 10. Supprime le style des boutons */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
