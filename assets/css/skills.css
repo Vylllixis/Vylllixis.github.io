@@ -66,7 +66,7 @@
   gap: var(--space-lg);
 }
 
-.skill-card {}
+/*.skill-card {}*/
 
 .skill-card__header {
   display: flex;
