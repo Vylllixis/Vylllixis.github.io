@@ -340,3 +340,32 @@
     flex-wrap: wrap;
   }
 }
+
+.epitech-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.epitech-description p {
+  margin: 0;
+  padding-left: 1rem;
+
+  border-left: 2px solid rgba(139, 92, 246, 0.5);
+
+  transition: 0.3s ease;
+}
+
+.epitech-description p:hover {
+  border-left-color: #8b5cf6;
+  transform: translateX(4px);
+}
+
+.highlight {
+  color: #14b8a6;
+  font-weight: 600;
+}
