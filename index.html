@@ -26,6 +26,73 @@
   <link rel="stylesheet" href="assets/css/footer.css" />
 </head>
 <body style="padding: 2rem;">
+  <!-- ==========================================
+      NAVBAR
+  ========================================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <!-- Barre de progression scroll (fine ligne colorée tout en haut) -->
+    <div class="navbar__progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <nav class="navbar__inner container" aria-label="Navigation principale">
+
+      <!-- Logo / Nom -->
+      <a href="#hero" class="navbar__logo" aria-label="Retour en haut">
+        <span class="navbar__logo-bracket" aria-hidden="true">&lt;</span>
+        TM<span class="navbar__logo-accent">–C</span>
+        <span class="navbar__logo-bracket" aria-hidden="true">/&gt;</span>
+      </a>
+
+      <!-- Liens desktop -->
+      <ul class="navbar__links" role="list">
+        <li><a href="#a-propos"    class="navbar__link">À propos</a></li>
+        <li><a href="#competences" class="navbar__link">Compétences</a></li>
+        <li><a href="#projets"     class="navbar__link">Projets</a></li>
+        <li><a href="#experiences" class="navbar__link">Expériences</a></li>
+        <li><a href="#formation"   class="navbar__link">Formation</a></li>
+      </ul>
+
+      <!-- Actions à droite -->
+      <div class="navbar__actions">
+        <a
+          href="assets/cv/cv-theo-moitrier-cabodi.pdf"
+          download
+          class="btn btn--outline navbar__cta"
+        >
+          CV
+        </a>
+
+        <!-- Bouton hamburger (visible seulement sur mobile) -->
+        <button
+          class="navbar__hamburger"
+          id="hamburger-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="navbar__hamburger-line" aria-hidden="true"></span>
+          <span class="navbar__hamburger-line" aria-hidden="true"></span>
+          <span class="navbar__hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    </nav>
+
+    <!-- Menu mobile (overlay) -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-menu__links" role="list">
+        <li><a href="#a-propos"    class="mobile-menu__link">À propos</a></li>
+        <li><a href="#competences" class="mobile-menu__link">Compétences</a></li>
+        <li><a href="#projets"     class="mobile-menu__link">Projets</a></li>
+        <li><a href="#experiences" class="mobile-menu__link">Expériences</a></li>
+        <li><a href="#formation"   class="mobile-menu__link">Formation</a></li>
+        <li>
+          <a href="assets/cv/cv-theo-moitrier-cabodi.pdf" download class="mobile-menu__link">
+            📄 Télécharger CV
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
   <div class="container">
     <h1 class="gradient-text">Théo Moitrier-Cabodi</h1>
     <h2>Développeur Applicatif R&D</h2>
@@ -43,6 +110,78 @@
       <span class="tag">.NET</span>
     </div>
   </div>
+  <!-- ==========================================
+      SECTION CONTACT (courte, avant footer)
+  ========================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">// Contact</span>
+        <h2>Parlons-nous</h2>
+        <p>
+          Je ne suis pas en recherche active, mais je suis toujours
+          curieux de ce qui se fait. N'hésite pas à m'écrire.
+        </p>
+      </div>
+
+      <div class="contact__links fade-in">
+        <a
+          href="https://linkedin.com/in/ton-profil-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact__link"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="https://github.com/Vylllixis"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact__link"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+      FOOTER
+  ========================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          &copy; 2025 Théo Moitrier-Cabodi — Développé avec HTML, CSS & JS Vanilla
+        </p>
+        <div class="footer__links">
+          <a href="https://github.com/Vylllixis" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/th%C3%A9o-moitrier-cabodi-3277552b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button
+    class="back-to-top"
+    id="back-to-top"
+    aria-label="Retourner en haut de la page"
+    title="Haut de page"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
 
   <script src="assets/js/typewriter.js"></script>
   <script src="assets/js/projects.js"></script>
