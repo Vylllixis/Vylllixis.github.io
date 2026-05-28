@@ -285,3 +285,15 @@ section.section--alt {
   h1 { font-size: var(--text-3xl); }
   h2 { font-size: var(--text-2xl); }
 }
+
+/* Assure que le focus est toujours visible */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Retire l'outline sur les clics (pas au clavier) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
