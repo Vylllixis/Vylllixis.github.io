@@ -546,6 +546,230 @@
   </section>
 
   <!-- ==========================================
+      SECTION PROJETS
+  ========================================== -->
+  <section id="projets" class="section--alt">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">// Projets</span>
+        <h2>Ce que j'ai réalisé</h2>
+        <p>Projets professionnels et scolaires — du code qui tourne vraiment</p>
+      </div>
+
+      <!-- Filtres par technologie -->
+      <div class="projects__filters fade-in" role="group" aria-label="Filtrer les projets par technologie">
+        <button class="projects__filter-btn active" data-filter="all">Tous</button>
+        <button class="projects__filter-btn" data-filter="csharp">C#</button>
+        <button class="projects__filter-btn" data-filter="dotnet">.NET</button>
+        <button class="projects__filter-btn" data-filter="python">Python</button>
+        <button class="projects__filter-btn" data-filter="javascript">JavaScript</button>
+      </div>
+
+      <!-- Grille de projets -->
+      <div class="projects__grid" id="projects-grid">
+
+        <!-- ---- PROJET 1 : SIPM ---- -->
+        <article
+          class="project-card fade-in"
+          data-tags="csharp dotnet"
+        >
+          <div class="project-card__img-wrapper">
+            <img
+              src="assets/img/projects/sipm.jpg"
+              alt="Application SIPM — Interface de gestion industrielle"
+              class="project-card__img"
+              width="1200"
+              height="630"
+              loading="lazy"
+            />
+            <div class="project-card__overlay" aria-hidden="true"></div>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--pro">Pro</span>
+            </div>
+          </div>
+
+          <div class="project-card__body">
+            <h3 class="project-card__title">SIPM</h3>
+            <p class="project-card__subtitle">Application industrielle — Mirion Technologies</p>
+            <p class="project-card__description">
+              Application de supervision et de gestion pour sondes de détection.
+              J'ai amélioré les performances, ajouté la gestion d'onglets et de fichiers,
+              et repensé l'interface pour la rendre plus intuitive.
+            </p>
+
+            <div class="project-card__tags">
+              <span class="tag">C#</span>
+              <span class="tag">.NET</span>
+              <span class="tag">Visual Studio</span>
+              <span class="tag">UX/UI</span>
+            </div>
+
+            <div class="project-card__links">
+              <span class="project-card__private">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                Code privé — projet professionnel
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---- PROJET 2 : MIGRATION MAUI ---- -->
+        <article
+          class="project-card fade-in"
+          data-tags="csharp dotnet"
+        >
+          <div class="project-card__img-wrapper">
+            <img
+              src="assets/img/projects/migration-maui.jpg"
+              alt="Migration Xamarin vers .NET MAUI"
+              class="project-card__img"
+              width="1200"
+              height="630"
+              loading="lazy"
+            />
+            <div class="project-card__overlay" aria-hidden="true"></div>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--pro">Pro</span>
+            </div>
+          </div>
+
+          <div class="project-card__body">
+            <h3 class="project-card__title">Migration Xamarin → .NET MAUI</h3>
+            <p class="project-card__subtitle">Modernisation d'app mobile — Mirion Technologies</p>
+            <p class="project-card__description">
+              Migration d'une application mobile développée sous Xamarin vers
+              .NET MAUI (Multi-platform App UI). Analyse de compatibilité,
+              adaptation de l'architecture et gestion des problématiques de
+              migration d'un projet en production.
+            </p>
+
+            <div class="project-card__tags">
+              <span class="tag">C#</span>
+              <span class="tag">.NET MAUI</span>
+              <span class="tag">Xamarin</span>
+              <span class="tag">Mobile</span>
+            </div>
+
+            <div class="project-card__links">
+              <span class="project-card__private">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                Code privé — projet professionnel
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---- PROJET 3 : EPITECH (À COMPLÉTER) ---- -->
+        <article
+          class="project-card fade-in"
+          data-tags="REMPLACE_PAR_TES_TAGS"
+        >
+          <div class="project-card__img-wrapper">
+            <img
+              src="assets/img/projects/project-epitech.jpg"
+              alt="Projet Epitech — REMPLACE_PAR_LE_NOM"
+              class="project-card__img"
+              width="1200"
+              height="630"
+              loading="lazy"
+            />
+            <div class="project-card__overlay" aria-hidden="true"></div>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--school">École</span>
+            </div>
+          </div>
+
+          <div class="project-card__body">
+            <h3 class="project-card__title">REMPLACE PAR LE NOM DU PROJET</h3>
+            <p class="project-card__subtitle">Projet Epitech</p>
+            <p class="project-card__description">
+              DÉCRIS TON PROJET ICI : ce que ça fait, quel problème ça résout,
+              ce que tu as appris.
+            </p>
+
+            <div class="project-card__tags">
+              <span class="tag">TECHNO 1</span>
+              <span class="tag">TECHNO 2</span>
+            </div>
+
+            <div class="project-card__links">
+              <a
+                href="https://github.com/Vylllixis/NOM-DU-REPO"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__link"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---- PROJET 4 : ESGI (À COMPLÉTER) ---- -->
+        <article
+          class="project-card fade-in"
+          data-tags="REMPLACE_PAR_TES_TAGS"
+        >
+          <div class="project-card__img-wrapper">
+            <img
+              src="assets/img/projects/project-esgi.jpg"
+              alt="Projet ESGI — REMPLACE_PAR_LE_NOM"
+              class="project-card__img"
+              width="1200"
+              height="630"
+              loading="lazy"
+            />
+            <div class="project-card__overlay" aria-hidden="true"></div>
+            <div class="project-card__badges">
+              <span class="project-card__badge project-card__badge--school">École</span>
+            </div>
+          </div>
+
+          <div class="project-card__body">
+            <h3 class="project-card__title">REMPLACE PAR LE NOM DU PROJET</h3>
+            <p class="project-card__subtitle">Projet ESGI</p>
+            <p class="project-card__description">
+              DÉCRIS TON PROJET ICI : ce que ça fait, quel problème ça résout,
+              ce que tu as appris.
+            </p>
+
+            <div class="project-card__tags">
+              <span class="tag">TECHNO 1</span>
+              <span class="tag">TECHNO 2</span>
+            </div>
+
+            <div class="project-card__links">
+              <a
+                href="https://github.com/Vylllixis/NOM-DU-REPO"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__link"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.projects__grid -->
+
+    </div>
+  </section>
+
+  <!-- ==========================================
       SECTION CONTACT (courte, avant footer)
   ========================================== -->
   <section id="contact">
