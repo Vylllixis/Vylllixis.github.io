@@ -8,11 +8,12 @@
 
   // Les rôles à faire défiler — personnalisés pour Théo
   const roles = [
-    'Applicatif R&D',
-    'en C# & Python',
+    'Applicatif Logiciel R&D',
+    'en C, Python, JavaScript',
     'passionné d\'IA',
-    'de solutions .NET',
-    'en modernisation',
+    'sur VSCode, Zed, Vim, Emacs',
+    'Linux et Windows',
+    'curieux',
   ];
 
   const target = document.getElementById('typewriter-target');
